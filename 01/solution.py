@@ -4,7 +4,7 @@ lines = list(fileinput.input())
 
 
 def calculateFuelRequirement(x):
-    return int(int(x)/3) - 2
+    return int(int(x) / 3) - 2
 
 
 def part1():
@@ -18,7 +18,7 @@ def calculateFuelRequirementRecursively(x):
     while current > 0:
         current = calculateFuelRequirement(current)
         # don't add negative mass
-        if(current > 0):
+        if current > 0:
             total += current
 
     return total
